@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f5f0" />
+    <title>Color Palette Explorer</title>
+  </head>
+  <body>
+    <main class="container">
+      <p class="eyebrow">A LITTLE INSPIRATION</p>
+      <h1>Color Palette<br /><em>Explorer</em></h1>
+      <p class="description">Explore beautiful color combinations.</p>
+      <form id="generator" novalidate>
+        <label for="color">Start with a color</label>
+        <div class="input-row">
+          <input id="color" name="color" type="text" value="terracotta" placeholder="Try green, blue, or #c67d65" autocomplete="off" aria-describedby="input-help error" />
+          <button type="submit">Generate <span aria-hidden="true">↗</span></button>
+        </div>
+        <p id="input-help" class="input-help">Enter a color name or a HEX code.</p>
+        <p id="error" class="error" role="alert"></p>
+      </form>
+      <div class="collection-heading"><div><p class="eyebrow">YOUR COLLECTION</p><h2>Palettes to explore</h2></div><span>12 PALETTES</span></div>
+      <div id="palettes" class="palettes" aria-live="polite"></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
